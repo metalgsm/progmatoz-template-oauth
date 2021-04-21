@@ -1,0 +1,14 @@
+server:
+  port: 8070
+  servlet:
+    context-path: /template
+spring:
+  application:
+    name: template
+  jmx:
+    enabled: false
+prog.matoz.config:
+  time-zone: America/Sao_Paulo
+loggin:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
