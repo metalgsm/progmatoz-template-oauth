@@ -24,5 +24,5 @@ Main Features:
 - Simplified access control to apis using the @AllowedRoles annotation
 
 ## Tips
-- check oAuth infra for easy way use
+- check oAuth infra for easy use
 - https://github.com/metalgsm/progmatoz-template-oauth-infra/
