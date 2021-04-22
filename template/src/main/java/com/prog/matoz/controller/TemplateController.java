@@ -47,7 +47,7 @@ public class TemplateController {
 		return productVO;
 	}
 
-	@AllowedRoles("ADMIN")
+	@AllowedRoles({"ADMIN", "VISITOR"})
 	@GetMapping(value = { "/all", "/all/{page}/{page-size}/{direction}" }, produces = { "application/json",
 			"application/xml", "application/x-yaml" })
 	public PagedModel<EntityModel<ProductVO>> findAll(@PathVariable Optional<Integer> page,

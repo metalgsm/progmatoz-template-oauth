@@ -10,7 +10,7 @@ spring:
   jmx:
     enabled: false
 keycloak:
-  url: http://172.28.117.93:30922
+  url: http://172.26.155.73:30922
   realm: test
   jwk: ${keycloak.url}/auth/realms/${keycloak.realm}/protocol/openid-connect/certs
 prog.matoz.config:
