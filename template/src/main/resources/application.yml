@@ -3,10 +3,16 @@ server:
   servlet:
     context-path: /template
 spring:
+  security:
+    ignored: "/actuator/**"
   application:
     name: template
   jmx:
     enabled: false
+keycloak:
+  url: http://172.28.117.93:30922
+  realm: test
+  jwk: ${keycloak.url}/auth/realms/${keycloak.realm}/protocol/openid-connect/certs
 prog.matoz.config:
   time-zone: America/Sao_Paulo
 loggin:

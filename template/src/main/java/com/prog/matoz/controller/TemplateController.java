@@ -26,6 +26,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.prog.matoz.data.vo.ProductVO;
+import com.prog.matoz.security.roles.AllowedRoles;
 import com.prog.matoz.service.ProductService;
 
 import io.swagger.annotations.Api;
@@ -38,6 +39,7 @@ public class TemplateController {
 	private final ProductService productService;
 	private final PagedResourcesAssembler<ProductVO> assembler;
 
+	@AllowedRoles("VISITOR")
 	@GetMapping(value = "/{id}", produces = { "application/json", "application/xml", "application/x-yaml" })
 	public ProductVO findById(@PathVariable("id") Long id) {
 		ProductVO productVO = productService.findById(id);
@@ -45,6 +47,7 @@ public class TemplateController {
 		return productVO;
 	}
 
+	@AllowedRoles("ADMIN")
 	@GetMapping(value = { "/all", "/all/{page}/{page-size}/{direction}" }, produces = { "application/json",
 			"application/xml", "application/x-yaml" })
 	public PagedModel<EntityModel<ProductVO>> findAll(@PathVariable Optional<Integer> page,
