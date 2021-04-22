@@ -1,4 +1,4 @@
-# progmatoz-template
+# progmatoz-template-oauth
 This is a template project for Java microservices. 
 <br/>
 Among the technologies used, the main ones are:
