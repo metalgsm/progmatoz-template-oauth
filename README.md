@@ -21,3 +21,7 @@ Main Features:
 - Api token with JWT
 - Security access with oAuth2
 - Native support to Keycloak
+
+## Tips
+- check oAuth infra for easy way use
+- https://github.com/metalgsm/progmatoz-template-oauth-infra/
