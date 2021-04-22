@@ -21,6 +21,7 @@ Main Features:
 - Api token with JWT
 - Security access with oAuth2
 - Native support to Keycloak
+- Simplified access control to apis using the @AllowedRoles annotation
 
 ## Tips
 - check oAuth infra for easy way use
