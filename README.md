@@ -20,3 +20,4 @@ Main Features:
 - Hateoas
 - Api token with JWT
 - Security access with oAuth2
+- Native support to Keycloak
