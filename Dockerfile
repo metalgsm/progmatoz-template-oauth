@@ -6,7 +6,7 @@ RUN mvn -B -DskipTests clean package
 
 ############################# FINAL IMAGE #############################
 
-FROM openjdk:8-jdk-alpine
+FROM openjdk:11
 
 COPY --from=builder *-main/target/*.jar app.jar
 
