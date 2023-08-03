@@ -1,4 +1,4 @@
-FROM maven:3.9.1-eclipse-temurin-8 as builder
+FROM maven:3.9.3-eclipse-temurin-11 as builder
 
 COPY . .
 
